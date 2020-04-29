@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>CSS Display Flex Align Generator</title>
+    </head>
+    <body>
+        <div class="content">
+            <div id="header">
+                <div id="settings">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="flx-direction">Flex-direction</label>
+                            <select class="input-element" name="flx-direction" id="flx-direction">
+                                <option value="">Choose...</option>
+                                <option value="row" selected>Row</option>
+                                <option value="column">Column</option>
+                                <option value="row-reverse">Row-Reverse</option>
+                                <option value="column-reverse">Column-reverse</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="flx-wrap">Flex-wrap</label>
+                            <select class="input-element" name="flx-wrap" id="flx-wrap">
+                                <option value="">Choose...</option>
+                                <option value="wrap" selected>Wrap</option>
+                                <option value="wrap-reverse">Wrap-Reverse</option>
+                                <option value="nowrap">Nowrap</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="flx-justify">Justify-Content</label>
+                            <select class="input-element" name="flx-justify" id="flx-justify">
+                                <option value="">Choose...</option>
+                                <option value="center" selected>Center</option>
+                                <option value="stretch">Stretch</option>
+                                <option value="baseline">Baseline</option>
+                                <option value="space-between">Space-Between</option>
+                                <option value="space-around">Space-Around</option>
+                                <option value="flex-start">Flex-Start</option>
+                                <option value="flex-end">Flex-End</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="flx-align">Align-Items</label>
+                            <select class="input-element" name="flx-align" id="flx-align">
+                                <option value="">Choose...</option>
+                                <option value="center" selected>Center</option>
+                                <option value="stretch">Stretch</option>
+                                <option value="baseline">Baseline</option>
+                                <option value="space-between">Space-Between</option>
+                                <option value="space-around">Space-Around</option>
+                                <option value="flex-start">Flex-Start</option>
+                                <option value="flex-end">Flex-End</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="items-qnt">Items</label>
+                            <input class="input-element" name="items-qnt" id="items-qnt" value="1">
+                        </div>
+                        <div class="input-group">
+                            <label for="items-content">Items Content</label>
+                            <input name="items-content" id="items-content" value="Content">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group css-result">
+                            <label for="container-css">Container CSS</label>
+                            <textarea name="container-css" id="container-css"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-items">
+                    <div class="item"></div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
