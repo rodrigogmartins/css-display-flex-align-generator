@@ -10,6 +10,7 @@ body {
     color: var(--secondary);
     font-weight: 600;
     padding-bottom: 50px;
+    overflow-x: hidden;
 }
 
 .content {

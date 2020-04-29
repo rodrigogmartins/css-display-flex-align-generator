@@ -1,9 +1,16 @@
 #header,
-.container {
-    animation-name: fade;
-    animation-duration: 500ms;
-}
+.container { animation: fade 500ms; }
 
+.input-group { animation: move-to-right 600ms backwards; animation-timing-function: cubic-bezier(0.075, 0.82, 0,165, 1);}
+.input-row:nth-child(1) .input-group:nth-child(1) { animation-delay: 250ms; }
+.input-row:nth-child(1) .input-group:nth-child(4) { animation-delay: 50ms; }
+.input-row:nth-child(1) .input-group:nth-child(3) { animation-delay: 300ms; }
+.input-row:nth-child(1) .input-group:nth-child(6) { animation-delay: 100ms; }
+.input-row:nth-child(1) .input-group:nth-child(5) { animation-delay: 350ms; }
+.container { 
+    animation: move-to-left 700ms 350ms backwards; 
+    animation-timing-function: ease-in-out;
+}
 
 @keyframes fade {
     from {
@@ -12,5 +19,25 @@
     } to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes move-to-right {
+    from {
+        opacity: 0;
+        transform: translateX(-100vh);
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes move-to-left {
+    from {
+        opacity: 0;
+        transform: translateX(200vh);
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
