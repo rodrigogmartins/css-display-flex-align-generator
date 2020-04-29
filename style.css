@@ -1,7 +1,19 @@
 :root {
     --bg-primary: #0e1a3a;
-    --bg-sencondary: #122353;
+    --bg-secondary: #122353;
     --secondary: #db1bdb;
+}
+
+::-webkit-scrollbar-track { background: #ffffffce; }
+::-webkit-scrollbar { 
+    width: 5px; 
+    height: 5px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    opacity: .7;
+    border-radius: 1em;
 }
 
 body {
@@ -52,7 +64,7 @@ body {
     height: 30px;
     width: 200px;
     padding-left: 5px;
-    background-color: var(--bg-sencondary);
+    background-color: var(--bg-secondary);
     color: white;
     font-weight: 600;
     border: none;
@@ -92,8 +104,9 @@ option {
     border-style: solid;
     border-width: 2px;
     display: flex;
-    background-color: var(--bg-sencondary);
+    background-color: var(--bg-secondary);
     border-color: white;
+    overflow-y: scroll;
 }
 
 .item {
