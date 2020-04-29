@@ -1,2 +1,3 @@
-# css-display-flex-align-generator
+# CSS Display: flex align Generator
+
 A simple CSS display: flex align generator.
